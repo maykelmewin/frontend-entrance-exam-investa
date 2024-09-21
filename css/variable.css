@@ -1,0 +1,24 @@
+.text_primary {
+  color: #23a8e0;
+}
+
+.text_secondary {
+  color: #49d2fe;
+}
+
+.text_dark {
+  color: #3e3e3e;
+}
+
+.text_off {
+  color: grey;
+}
+
+.bg_primary {
+  background-color: #23a8e0;
+}
+
+.bg_accent {
+  background-color: #01cfba;
+}
+/*# sourceMappingURL=variable.css.map */

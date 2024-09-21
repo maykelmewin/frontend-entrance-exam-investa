@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investa</title>
+
+    <!-- tab icon -->
+    <link rel="icon" href="./assets/added/investa_150.png">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- bootstrap v4, icon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+    <!-- font -->   
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white custom_navbar">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/added/logo.png" class="custom_logo" alt="avatar">
+            </a>
+            <div class="row nav_row">
+                <form class="col mr-auto input-group custom_serch">
+                    <input class="form-control" type="search" placeholder="Search Investagrams" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn bg_primary text-white" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <div>
+                    <button class="mr-auto navbar-toggler" style="max-width: 2000px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto custom_gutter">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-nowrap" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Stock
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-nowrap" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Virtual Trade
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-nowrap" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-nowrap" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Learn
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item text-nowrap" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-nowrap" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item custom_active">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <button class="px-3 text-uppercase custom_button_gradient text-nowrap my-2" data-toggle="modal" data-target="#exampleModalLong">Go Investaprime</button>
+                    <div class="row">
+                        <button class="btn my-2 my-sm-0 text_primary text-uppercase bg-transparent custom_hide" type="submit">
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                        </button>   
+                        <button class="btn my-2 my-sm-0 text-uppercase bg-transparent custom_hide" type="submit">
+                            <img src="./assets/added/icon.png" class="custom_icon" alt="icon">
+                        </button>   
+                        <button class="btn my-2 my-sm-0 text_primary text-uppercase bg-transparent custom_hide" type="submit">
+                            <i class="bi bi-bell-fill"></i>
+                        </button>   
+                        <button class="btn my-2 my-sm-0 text-uppercase bg-transparent" type="submit">
+                            <img src="./assets/user.png" class="custom_avatar" alt="avatar">
+                        </button> 
+                    </div>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- navigation -->
+    <section class="custom_nav p-3">
+        <div class="row text-center">
+            <div class="col-12 col-md-3 text-center">
+                <div class="bg-white custom_wallet_container mx-auto">
+                    <img src="./assets/added/instawallet.png" class="custom_icon" alt="icon">
+                    <h5 class="text_dark">0.00<br/><span>PHP</span></h5> 
+                </div> 
+            </div>
+            <div class="col-12 col-md-9 row">
+                <div class="col">
+                    <img src="./assets/wallet-icon.png" class="custom_icon" alt="icon">
+                    <h6 class="d-none d-sm-block">My Wallet</h6>
+                </div>
+                <div class="col">
+                    <img src="./assets/topup-icon.png" class="custom_icon" alt="icon">
+                    <h6 class="d-none d-sm-block">Top-Up</h6>
+                </div>
+                <div class="col">
+                    <img src="./assets/shop-icon.png" class="custom_icon" alt="icon">
+                    <h6 class="d-none d-sm-block">Shop</h6>
+                </div>
+                <div class="col">
+                    <img src="./assets/referral-icon.png" class="custom_icon" alt="icon">
+                    <h6 class="text_primary d-none d-sm-block">Referrals</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content -->
+    <section class="body pt-3 pb-5">
+        <div class="custom_content bg-white">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 mb-5">
+                    <div class="custom_size">
+                        <h3 class="text_dark font-weight-bold"><span class="text_secondary">Go Prime</span> Referral Program</h3>
+                        <p class="text_dark">Invite your friends to subscribe InvestaPrime and receive <span class="font-weight-bold">PHP 100</span> in your InstaWallet.</p>
+                    </div>
+                    <div class="mt-5">
+                        <h5 class="text_dark">Share Your Referral Link</h5>
+                        <div class="row mt-3 mr-4 custom_input_size">
+                            <div class="col col-xs-12 form-group mb-2 ">
+                                <input type="url" class="form-control" value="https://www.investagrams.com/prime?ir-wp">
+                            </div>
+                            <div class="col-2 col-xs-12">
+                                <button type="submit" class="btn bg_accent text-white mb-2 px-4">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-auto">
+                            <h5 class="col- text_dark">or share via</h5>
+                        </div>
+                        <div class="col-auto button_container">
+                            <img src="./assets/if_facebook_circle_294710.png" alt="fb">
+                            <img src="./assets/if_twitter_circle_294709.png" alt="twitter">
+                            <img src="./assets/email.png" alt="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mb-5">
+                    <div class="custom_reward px-4 py-4">
+                        <h4>Rewards</h4>
+                        <p class="mt-4">Total Rewards Earned <br/><span class="h5">Php 5,000</span> </p>
+                        <button type="submit" class="mt-4 btn bg_primary text-white container-fluid">View Referrals</button>
+                    </div>
+                </div>
+            </div>
+            <div class="custom_illustration py-5 px-2">
+                <p class="text_dark text-center px-3">
+                    <span class="h3 font-weight-bold">Additional Cash Bonus Awaits!</span>
+                    <br/>
+                    Get surprise cash bonus in your InvestaWallet
+                    <br/>
+                    for every 5 successful referrals.
+                </p>
+                <div class="custom_canvas container">
+                    <div class="row custom_spacing">
+                        <div class="col text_primary active_col">
+                            <img src="./assets/icons_php100.png" alt="P100">
+                            <div class="custom_check active_check"></div>
+                            <h6>Php 50</h6>
+                        </div>
+                        <div class="col text_primary active_col">
+                            <img src="./assets/icons_php100.png" alt="P100">
+                            <div class="custom_check active_check"></div>
+                            <h6>Php 50</h6>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/icons_php100.png" alt="P100">
+                            <div class="custom_check"></div>
+                            <h6>Php 50</h6>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/icons_php100.png" alt="P100">
+                            <div class="custom_check"></div>
+                            <h6>Php 50</h6>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/icons_treasure-09.png" alt="P100">
+                            <div class="custom_check"></div>
+                            <h6 class="text-center">
+                                Php 50
+                                </br>
+                                <span class="h5">+ Php ???</span>    
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="row custom_bar">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="custom_alternative_tocanvas text-center pt-4">
+                    <img src="./assets/icons_treasure-09.png" alt="P100">
+                    <h6 class="text_primary pt-2">Total: Php 100</h6>
+                </div>
+                <div class="custom_primary_button mx-auto px-3">
+                    <button class="mt-5 p-3 btn bg_primary container-fluid text-white">CLAIM REWARDS</button>
+                </div>
+            </div>
+            <div class="custom_instruction mt-5">
+                <h4 class="text_dark text-center font-weight-bold">How Does It Work?</h4>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-12 custom_instruction_image d-block d-md-none px-5 pb-4">
+                            <div>
+                                <img src="./assets/Referral-01.png" alt="email">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row pr-4">
+                                <div class="col-auto">
+                                    <img src="./assets/link.png" alt="email">
+                                </div>
+                                <p class="col text_off">
+                                    <span class="h6 font-weight-bold text-dark">Share Your Link to Friends</span>
+                                    <br/>
+                                    Invite friends to subscribe to InvestaPrime using your unique link
+                                </p>
+                            </div>
+                            <div class="row pr-4">
+                                <div class="col-auto">
+                                    <img src="./assets/get_100.png" alt="icon">
+                                </div>
+                                <p class="col text_off">
+                                    <span class="h6 font-weight-bold text-dark">You Get Php 50</span>
+                                    <br/>
+                                    Receive Php 50 in your InvestaWallet for every successful referral
+                                </p>
+                            </div>
+                            <div class="row pr-4">
+                                <div class="col-auto">
+                                    <img src="./assets/percent.png" alt="icon">
+                                </div>
+                                <p class="col text_off">
+                                    <span class="h6 font-weight-bold text-dark">Friends Get 5% Discount</span>
+                                    <br/>
+                                    Friends who use your link to subscribe to InvestaPrime will get 5% off
+                                </p>
+                            </div>
+                            <div class="row pr-4">
+                                <div class="col-auto">
+                                    <img src="./assets/surprise.png" alt="icon">
+                                </div>
+                                <p class="col text_off">
+                                    <span class="h6 font-weight-bold text-dark">Get Surprise Cash Bonus</span>
+                                    <br/>
+                                    Receive additional surprise bonus for every 5 successful referrals
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 custom_instruction_image_medium d-none d-md-block">
+                            
+                                <img src="./assets/Referral-01.png" alt="icon">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cutom_referral_table mt-5">
+                <h4 class="text_dark text-center font-weight-bold">My Referrals</h4>
+                <div class="table-responsive mt-5">
+                    <table class="table">
+                      <thead>
+                        <tr class="text_off">
+                          <th scope="col ">Invites</th>
+                          <th scope="col">Dates</th>
+                          <th scope="col">Remarks</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Rewards</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text_dark">
+                        <tr>
+                            <td class="p-0 custom_container">
+                                <div class="container custom_container_wfixed">
+                                    <div class="row pl-2">
+                                        <div>
+                                            <img src="./assets/user.png" alt="email">
+                                        </div>
+                                        <div class="pl-2 p-0">
+                                            <p>
+                                                <span class="text_primary font-weight-bold">
+                                                    Josehine
+                                                </span> 
+                                                <br/>
+                                                @joseph1570079621
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Oct 3</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Investagrams Trading Cup 2019 - Regular Pass</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_red pt-2">Cancelled</p>
+                            </td>
+                            <td>
+                                <p class="text_off pt-2">50 Php</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-0 custom_container">
+                                <div class="container custom_container_wfixed">
+                                    <div class="row pl-2">
+                                        <div>
+                                            <img src="./assets/user.png" alt="email">
+                                        </div>
+                                        <div class="pl-2 p-0">
+                                            <p>
+                                                <span class="text_primary font-weight-bold">
+                                                    Gino
+                                                </span> 
+                                                <br/>
+                                                @Gino2514
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Sept 12</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Investagrams Trading Cup 2019 - Student Pass</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_red pt-2">Cancelled</p>
+                            </td>
+                            <td>
+                                <p class="text_off pt-2">50 Php</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-0 custom_container">
+                                <div class="container custom_container_wfixed">
+                                    <div class="row pl-2">
+                                        <div>
+                                            <img src="./assets/user.png" alt="email">
+                                        </div>
+                                        <div class="pl-2 p-0">
+                                            <p>
+                                                <span class="text_primary font-weight-bold">
+                                                    Josehine
+                                                </span> 
+                                                <br/>
+                                                @joseph1570079621
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Oct 3</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Investagrams Trading Cup 2019 - Regular Pass</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_red pt-2">Cancelled</p>
+                            </td>
+                            <td>
+                                <p class="text_off pt-2">50 Php</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-0 custom_container">
+                                <div class="container custom_container_wfixed">
+                                    <div class="row pl-2">
+                                        <div>
+                                            <img src="./assets/user.png" alt="email">
+                                        </div>
+                                        <div class="pl-2 p-0">
+                                            <p>
+                                                <span class="text_primary font-weight-bold">
+                                                    Gino
+                                                </span> 
+                                                <br/>
+                                                @Gino2514
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Sept 12</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Investagrams Trading Cup 2019 - Student Pass</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_red pt-2">Cancelled</p>
+                            </td>
+                            <td>
+                                <p class="text_off pt-2">50 Php</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-0 custom_container">
+                                <div class="container custom_container_wfixed">
+                                    <div class="row pl-2">
+                                        <div>
+                                            <img src="./assets/user.png" alt="email">
+                                        </div>
+                                        <div class="pl-2 p-0">
+                                            <p>
+                                                <span class="text_primary font-weight-bold">
+                                                    Josehine
+                                                </span> 
+                                                <br/>
+                                                @joseph1570079621
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Oct 3</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_dark pt-2">Investagrams Trading Cup 2019 - Regular Pass</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold pt-2 text_completed">Completed</p>
+                            </td>
+                            <td>
+                                <p class="font-weight-bold text_off pt-2">50 Php</p>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog p-0 modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content p-0">
+                <div class="modal-body custom_modal p-0">
+                    <div class="custom_close" data-dismiss="modal">
+                        <div >
+                            <img src="./assets/close-material.png" class="" alt="icon">
+                        </div>
+                    </div>
+                    <div class="container p-0 custom_modal_content">
+                        <div class="row ">
+                            <div class="col-12 col-md-6 bg_primary">
+                                <div class="mt-5">
+                                    <img src="./assets/graphic_ui.png" class="" alt="icon">
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="text-white font-weight-bold">Auto 52-Week High and Low Tool</h5>
+                                    <p class="text-white mt-3">Be a more effective and efficient investor with our Auto 52-Week High and Low Tool.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-0 bg_white">
+                                <div class="mt-5">
+                                    <img src="./assets/hero.png" class="" alt="icon">
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="text_dark font-weight-bold">
+                                        Automate Your Charting
+                                    </h4>
+                                    <h4 class="text_dark font-weight-bold">
+                                        and Enjoy Features
+                                    </h4>
+                                    <h5 class="text_off font-weight-regular mt-3">
+                                        For as low as Php 9/day!
+                                    </h5>
+                                </div>
+                                <div class="custom_modal_button">
+                                    <button class="btn bg_primary text-white my-5 py-3 container-fluid" type="button">
+                                        ACCESS PRIME NOW
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery & popper for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

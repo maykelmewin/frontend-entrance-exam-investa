@@ -1,0 +1,40 @@
+// color used
+$primaryColor   :   #23a8e0 ;
+$secondaryColor :   #49d2fe  ;
+$accentColor    :   #01cfba ;
+$gradientColor1 :   #fec013 ;
+$gradientColor2 :   #ec7763 ;
+
+$darkColor      :   #3e3e3e ;
+$negativeColor  :   #ff8880 ;
+
+//breakpoints screen-width
+$breakpoint-xs : 576px;
+$breakpoint-sm : 768px;
+$breakpoint-md : 992px;
+$breakpoint-lg : 1200px;
+
+//custom class
+.text_primary {
+    color: $primaryColor;
+}
+
+.text_secondary {
+    color: $secondaryColor;
+}
+
+.text_dark {
+    color: $darkColor;
+}
+
+.text_off {
+    color: grey;
+}
+
+.bg_primary {
+    background-color: $primaryColor;
+}
+
+.bg_accent {
+    background-color: $accentColor;
+}
